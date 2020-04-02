@@ -42,7 +42,7 @@ spring:
       mail:
         smtp:
           auth: true
-          startttls.enable: true
+          starttls.enable: true
           ssl.trust: smtp.gmail.com
           connectiontimeout: 5000
           timeout: 5000
