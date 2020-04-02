@@ -1,2 +1,33 @@
-device:
-  message: Salooot device develop
+#datasource properties
+spring:
+  datasource:
+    url: {cypher}AQBHDHonjEjqg5BjJbwmGrlexSY3S5milKzCsrTwHrN55eJzZHF3uJyeMMUAd82kCB9rB4pRfDnuiEAzzuLN1x8U0zjec6czoq8nIPOCdABKEj+sxSiaDy6duc+t1LWf6VpqiD7dt5GQbCb6nDtuQ1FU+/gznRJeYRr7RYYuUzRsOiu7x9TFX9BewzJVIMshUnOvV9FosGglCUY7MeI1Fwmu6g9wK3xtwuWNiYqM3fgBj+TD3csY3iM7KkHzbedeaTP9RBSWRP0ItdHiWQTdIIJBF6hhyZG3X2nppApFhle/+X+EasnJd06nQmwp7ywgskoeG/aD/ocktZYSjeiQIse41QGjvphNgpqKuHjDzC7891SE6e87kIuFOWYQVD/fnlYSYoX0aj7WFJtDn68EeL9UrtFLqm2F7LVCAYPCnEu6Utg5k5oqRfkbZhlo5xzdrYZeKLYUFrCLD+pujSFSoiMr
+    driver-class-name: com.mysql.jdbc.Driver
+
+#spring.datasource.username=@db.username@
+#spring.datasource.password=@db.password@
+#spring.datasource.testWhileIdle=true
+#spring.datasource.validationQuery=SELECT 1
+#
+##jpa properties
+#spring.jpa.show-sql=true
+#spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults=false
+#spring.jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
+#spring.jpa.properties.hibernate.dialect=@sql.dialect@
+#
+#  #liquibase properties
+#spring.liquibase.enabled=true
+#spring.liquibase.url=@device.db.url@
+#spring.liquibase.user=@db.username@
+#spring.liquibase.password=@db.password@
+#spring.liquibase.drop-first=false
+#spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.yaml
+#
+#  #eureka client configurations
+#eureka.client.register-with-eureka=true
+#eureka.client.fetch-registry=true
+#eureka.client.registry-fetch-interval-seconds=30
+#eureka.instance.prefer-ip-address=true
+#eureka.instance.lease-renewal-interval-in-seconds=30
+#eureka.instance.lease-expiration-duration-in-seconds=60
