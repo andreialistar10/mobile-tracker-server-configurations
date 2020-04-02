@@ -1,33 +1,40 @@
-#datasource properties
 spring:
+  #datasource properties
   datasource:
     url: "{cipher}AQAhLLpGZ3UAJ9DKMSF8wM3xHDOVabLU6eq9xbWeDu3q3s943YTZZNySeGBWV1qrmoyeir/RTAxb52g1pAGZ67xQ8tgDEIE6hySqlekgmxYje5xkyAQmMPM+cD5mAGRAYsK4JSARdIcMOZHA1rqC7U8dQtRDszbvSZAb8BUvEFW7ADJu0+OhPnpoIMY6ATgH6NR7e2GutUAv2SBCR6xK09M2jeN+5ufmDu/4dRtOC5EAX+d3rvG/zZEVLL/TNWoQ2+psuT1FDjDh+2iqRw8n2SmZql8kejjzdSKW67fRoN1pcnKKpdAQBHOtYfMmTXg4U6EL8sR9pV8Nq2irUXvVtFwW7f5tUHHk0JjFQuODwqJhXed+xcPa5QGwcpL4v4r0X0JUZFmWANN1rZnS46gQhyk8+rD8wsHzEhG1whExrhSk6MJS/cJiS5L9qpesqato16zT3Tukw7BYZCRzDCNO8wug"
     driver-class-name: com.mysql.jdbc.Driver
+    username: "{cipher}AQC4dGnrb+WXTH/P0um1qajPlwkMECpoCGE5B7nEzxnTKK0zVJR3r0EpwbOCMvS4frVUAesjioopkewMDAX+6zekheZxwagWdr/08f2P4vmhkQG99SEH/P9dnAxMS2ZzlMB4JSvKB5laF2degz8G1YAeIBAlMsvKmYyDN0tjwaqgapT04LRizZCWL0sHPs8265NrjQRLDPZcBk38D9i7M5fvI1qHIwwgSduiqIlVFzyI8Kr76I9BfZjSUEyvi/w7OewVL2qDWVZ/1DXHEu0Wk0JFixGjMF2NalJALFLj1QQUaPL5ANe9417PpcmkWZ7EHvwDDtIbH7udr9J65JtwVD1m6bLHODhh3iDjvFh9NJHeQcWVYJo/hf77mb/8Aby7nw8="
+    password: ""
+    dbcp2:
+      test-while-idle: true
+      validation-query: SELECT 1
+  #jpa properties
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  #liquibase configurations
+  liquibase:
+    enabled: true
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    drop-first: false
+    change-log: classpath:db/changelog/db.changelog-master.yaml
 
-#spring.datasource.username=@db.username@
-#spring.datasource.password=@db.password@
-#spring.datasource.testWhileIdle=true
-#spring.datasource.validationQuery=SELECT 1
-#
-##jpa properties
-#spring.jpa.show-sql=true
-#spring.jpa.hibernate.ddl-auto=none
-#spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults=false
-#spring.jpa.hibernate.naming-strategy=org.hibernate.cfg.ImprovedNamingStrategy
-#spring.jpa.properties.hibernate.dialect=@sql.dialect@
-#
-#  #liquibase properties
-#spring.liquibase.enabled=true
-#spring.liquibase.url=@device.db.url@
-#spring.liquibase.user=@db.username@
-#spring.liquibase.password=@db.password@
-#spring.liquibase.drop-first=false
-#spring.liquibase.change-log=classpath:db/changelog/db.changelog-master.yaml
-#
-#  #eureka client configurations
-#eureka.client.register-with-eureka=true
-#eureka.client.fetch-registry=true
-#eureka.client.registry-fetch-interval-seconds=30
-#eureka.instance.prefer-ip-address=true
-#eureka.instance.lease-renewal-interval-in-seconds=30
-#eureka.instance.lease-expiration-duration-in-seconds=60
+#eureka configurations
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 30
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 60
