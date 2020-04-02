@@ -4,6 +4,6 @@ user:
     jwt:
       header: 
         name: Authorization
-        value-prefix: Bearer
+        prefix-value: Bearer
       expiration: 1800000
-      secret: ZjsanferfndSFDSc453423dsCASCASdascdmc323432dscs0-qwddasxaskcnw
+      secret: "{cipher}AQC6y7WUmTTph77gAvS2Ls7YLwWFZ/0CxOXbz5udjex6HD/3AO+mD76FLMswtQaMlC9sITAvBykI7dx0vfWePu70Fr1KboUWFzbJ3azxhhZEUSJC6Gp76Z22VrSYUygZvkWJColnc6H2e2Of5TkU0MApgfiroSd+Nwq35SVDBcq2pSVIeIDE6ygWrBqHWVxrKfCFb3Cc+U/NO3F72nQcah2/j8g6zIGwx/PQUFRAR7dBN1+5DtAy/7Hix9B9r9KlhS48EFKoayDNrn9ggA66VwU4HOKo9/5nkybEBHgvscD7qTtTyQY64L4l9VAsijlpBKVuF6fzJduYyCGykM0gqWU70OKEZqRqmammq/M6FmK3s8pBH87VSybI8lbyrFWCsYf42lk53MtJDj6dtdl0FLXTIZqhXqYGm2KtlmKJ3yhLxsIHA8YTkGpk5dpoF3y/osyvrHeH12QCqGohECf7XcQz9gHyNO+X4hLE5owva9QyiWSNP34+Qhn5GSV9+H+Fz25Al2zS/BAmLfNhr+YPAV/2KjSkJKfptyZ1rOC0EAe6u/7c+0RAfN2sFgjoeqhQZ4g="
