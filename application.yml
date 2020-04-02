@@ -2,7 +2,8 @@
 user:
   security:
     jwt:
-      header: Authorization
+      header: 
+        - Authorization
         prefix: Bearer
       expiration: 1800000
       secret: ZjsanferfndSFDSc453423dsCASCASdascdmc323432dscs0-qwddasxaskcnw
