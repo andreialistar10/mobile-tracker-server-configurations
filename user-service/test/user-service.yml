@@ -1,5 +1,5 @@
 spring:
-  #datasource properties
+  #datasource configurations
   datasource:
     url: "{cipher}AQAJSX4FC1Bjxq3nJnuIT3jVvZaTkf3CxsrQoYmfwT3ieR8UESyvJhv0XqhweTAfakbfdmznMbPJlQmc73/CqlsBOsu7nyklBerIv3GeuaRYb4DhIDNQiGhXqtTOtNLBNRtLOia5hZPnn5dnCTswqYLr70L3fpRXCPwfQk5g/G73+nyAPjBuK7CWhzNCGUivM9Tv94CN1PlrPC39aA3veHZb5mnBvklZQ9rAnvnIZ3LIaEZhjJ5pPasy0ErijsstlQ98PAXgvnffnPQrVluWaNkKwv4DKTtt+q842rgCP+T3kGJKrULnQpHnxoYwqy0bwk+Ncgs/CcwEpScZ1v/doLEg8O363txlHRHyjaBweIjtR0kSvmLY5cVEL73iMxXbAwMFifGpF8h3VgvoCDPGPWRc0oudZaGXkMOz/Wt/46/dsRDHxwg9sSqJ6oA+o+DDaL8="
     username: "{cipher}AQAGFxC/Nf/170JdpnAXjUVaMOIGnfbZ+SyG4DU1VjgKcNpnkP9AEoqMcbYaZ+7c/+tF61oDYwj6rdTnpvdKhWN9BJD4Yv9dBapyhCKWM4s5mfHJTSRCc5WqfkMihFggnGcGfqa+F7PDW7t1qSjVdXNJ9AbanQc95DsryscRSAJtjeBK6TZ9IVHqtsesTD76ROSJDuGJmVSBYjdyh2ReyX8UKa8VYzYki9DjFj6/OMcxtqHpyrniRLzWR0lLXWGjtjIvsLlj2H/mILAj+fkiEUcaOl4aX4n56/2TqcvdtvOJpmp9HBVDSfhvP1MKfganKbyK8xrrsHP19kHyu5OHqpaB7s8WzA2BmghiJaBLfh4o+kV43E0A5osE3sBZDtiv/Os="
@@ -8,7 +8,7 @@ spring:
     dbcp2:
       test-while-idle: true
       validation-query: SELECT 1
-  #jpa properties
+  #jpa configurations
   jpa:
     show-sql: true
     hibernate:

@@ -1,4 +1,4 @@
-#configs for user jwt security
+#user jwt security configurations
 user:
   security:
     jwt:

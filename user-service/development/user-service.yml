@@ -1,5 +1,5 @@
 spring:
-  #datasource properties
+  #datasource configurations
   datasource:
     url: "{cipher}AQCso5uuv36iZrmzwLm1bgMaUuVWpYPnwZMFcknXMSHFo2xP+67iCVP+rz+CjVZ0VgmtaAh0VWBHzhUUlnLnA5FctuGEUJcY/VmQ1Jky2G8rg33d61djtOGgEn1IftumdWwm0iswIdZ1DGLy/7K9PhJ1KWgOYS53aGjBGb4MDcTffYDVhavx7CIOwbl/0BDJ78emFO7RRNTEMG/sjx6XNk24mlScQzPL1JFx40DRG0jhBdo6I55rzqs58hbMvivhdJSm3spOsUgwdn5QdD1avqzT05WfBcWib5xRYvQEZ0QuW2IVGd2h3w0CIVl7cG1s2RRD/0WUeFOk334jMUb+luQDsMzXoTnvroX7j8hoEOLbDwnUWcfZczpJ9MOCdIyHqkis8LvvOZQP1JwOICw1PMO2qJGSXfZPijOoWvMqp1eUqZAhOcr6HcjKQVxrpV1PDp8="
     driver-class-name: com.mysql.jdbc.Driver
@@ -8,7 +8,7 @@ spring:
     dbcp2:
       test-while-idle: true
       validation-query: SELECT 1
-  #jpa properties
+  #jpa configurations
   jpa:
     show-sql: true
     hibernate:
@@ -27,7 +27,7 @@ spring:
     password: ${spring.datasource.password}
     drop-first: false
     change-log: classpath:db/changelog/db.changelog-master.yaml
-  #freemarker configuration
+  #freemarker configurations
   freemarker:
     template-loader-path: classpath:/templates
     suffix: .ftl
@@ -60,3 +60,13 @@ eureka:
     prefer-ip-address: true
     lease-renewal-interval-in-seconds: 30
     lease-expiration-duration-in-seconds: 60
+    
+#user microservice security configurations
+user:
+  security:
+    jwt:
+      login-url: /login
+      logout-url: /logout
+      generate-refresh-token-url: /refresh-token
+      expiration-refresh-token: 1209600000
+      secret-refresh-token: "{cipher}AQC2UOL7X4V8pcpmmxwNKzdzzTP4rCiQdIlogMlsay+xNchU24Txxtv0LGyP2W01BpWHGj66oNTyGM7HG8n+RFXT/dlstVzVYKyWaUtvvT+f6h/+S5eHQzOMzsDZ5XiVulXHNJSy8V6GVJ1wQYe6PpqPP1BdGrAqPIeAMVls90suirTRRC8v3C0jBwuvbuoRtkzpcFnAMohvZsstNMNMs/K9C/GvNQcvio7WTU8MCJOubmMM56rCNjZemWTbje2Jd4CIuFfKQ+eZ1Jltbd98mNzcDGKiKWz9l+BGd2mXz5uV5vkdpzoEiWg9tGBsa7UYoPMNY9ZmtF2NH3+J3tJg+AbohJ/jO7O7uWieJaT8zWHGfKFmuIQW1ZQ3k6ylAyVuJKEWvsQ2ITX1IXsr2cBBmyo1qoEp2zHyB3AUqdwDPW97/cltjiBgpCL27+lu1IQpY5ehLuzCnVp8HA5SWWuKw276hvOyKAIStjYHHxRz67p74geTafEPILR+7q25bcV1WQ3If8Tr5bdiovBlR8lcxXNKGu7lo/o4xIWKFaJeaituLUwponQ2N4p9ZSsdS7e1nc5KCv4GH3SfRwBfi+/0LxrG"
