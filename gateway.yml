@@ -1,0 +1,37 @@
+#set gateway name
+spring:
+  application:
+    name: gateway-service
+
+zuul:
+  #set prefix for all requests through gateway
+  prefix: /mobile-tracker/
+  #strip prefix when forward any request to a specific microservice
+  strip-prefix:
+  #routes
+  routes:
+    login:
+      strip-prefix: false
+      service-id: user-service
+    refresh-token:
+      strip-prefix: false
+      service-id: user-service
+    logout:
+      strip-prefix: false
+      service-id: user-service
+    users:
+      strip-prefix: false
+      service-id: user-service
+    devices:
+      strip-prefix: false
+      service-id: device-service
+  #set sensitive headers that will not be forwarded
+  sensitive-headers: Cookie, Set-Cookie
+  FormBodyWrapperFilter:
+    pre:
+      disable: true
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+ribbon:
+  ReadTimeout: 60000
