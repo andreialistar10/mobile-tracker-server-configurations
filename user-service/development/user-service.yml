@@ -1,6 +1,6 @@
 spring:
   application:
-    name: {application}
+    name: user-service
   #datasource configurations
   datasource:
     url: "{cipher}AQCso5uuv36iZrmzwLm1bgMaUuVWpYPnwZMFcknXMSHFo2xP+67iCVP+rz+CjVZ0VgmtaAh0VWBHzhUUlnLnA5FctuGEUJcY/VmQ1Jky2G8rg33d61djtOGgEn1IftumdWwm0iswIdZ1DGLy/7K9PhJ1KWgOYS53aGjBGb4MDcTffYDVhavx7CIOwbl/0BDJ78emFO7RRNTEMG/sjx6XNk24mlScQzPL1JFx40DRG0jhBdo6I55rzqs58hbMvivhdJSm3spOsUgwdn5QdD1avqzT05WfBcWib5xRYvQEZ0QuW2IVGd2h3w0CIVl7cG1s2RRD/0WUeFOk334jMUb+luQDsMzXoTnvroX7j8hoEOLbDwnUWcfZczpJ9MOCdIyHqkis8LvvOZQP1JwOICw1PMO2qJGSXfZPijOoWvMqp1eUqZAhOcr6HcjKQVxrpV1PDp8="

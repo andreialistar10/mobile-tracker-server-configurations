@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: device-service
   #datasource configurations
   datasource:
     url: "{cipher}AQAhLLpGZ3UAJ9DKMSF8wM3xHDOVabLU6eq9xbWeDu3q3s943YTZZNySeGBWV1qrmoyeir/RTAxb52g1pAGZ67xQ8tgDEIE6hySqlekgmxYje5xkyAQmMPM+cD5mAGRAYsK4JSARdIcMOZHA1rqC7U8dQtRDszbvSZAb8BUvEFW7ADJu0+OhPnpoIMY6ATgH6NR7e2GutUAv2SBCR6xK09M2jeN+5ufmDu/4dRtOC5EAX+d3rvG/zZEVLL/TNWoQ2+psuT1FDjDh+2iqRw8n2SmZql8kejjzdSKW67fRoN1pcnKKpdAQBHOtYfMmTXg4U6EL8sR9pV8Nq2irUXvVtFwW7f5tUHHk0JjFQuODwqJhXed+xcPa5QGwcpL4v4r0X0JUZFmWANN1rZnS46gQhyk8+rD8wsHzEhG1whExrhSk6MJS/cJiS5L9qpesqato16zT3Tukw7BYZCRzDCNO8wug"
