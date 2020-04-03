@@ -1,0 +1,22 @@
+#set running port for tomcat
+server:
+  port: 8761
+
+#set application name
+spring:
+  application:
+    name: discovery-service
+
+#eureka configurations
+eureka:
+  server:
+    eviction-interval-timer-in-ms: 20000
+    enable-self-preservation: true
+  instance:
+    prefer-ip-address: true
+    hostname: 192.168.100.3
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
