@@ -1,0 +1,9 @@
+#liquibase configurations
+spring:
+  liquibase:
+    enabled: true
+    url: ${spring.datasource.url}
+    user: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    drop-first: false
+    change-log: classpath:db/changelog/db.changelog-master.yaml
