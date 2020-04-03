@@ -7,7 +7,7 @@ zuul:
   #set prefix for all requests through gateway
   prefix: /mobile-tracker/
   #strip prefix when forward any request to a specific microservice
-  strip-prefix:
+  strip-prefix: true
   #routes
   routes:
     login:
