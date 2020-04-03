@@ -10,33 +10,3 @@ spring:
     dbcp2:
       test-while-idle: true
       validation-query: SELECT 1
-  #jpa configurations
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: none
-      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-    properties:
-      hibernate:
-        temp:
-          use_jdbc_metadata_defaults: false
-        dialect: org.hibernate.dialect.MySQL5Dialect
-  #liquibase configurations
-  liquibase:
-    enabled: true
-    url: ${spring.datasource.url}
-    user: ${spring.datasource.username}
-    password: ${spring.datasource.password}
-    drop-first: false
-    change-log: classpath:db/changelog/db.changelog-master.yaml
-
-#eureka configurations
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    registry-fetch-interval-seconds: 30
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 60
