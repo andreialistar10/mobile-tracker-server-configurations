@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: discovery-client
   application:
     name: user-service
   #datasource configurations
@@ -53,15 +55,15 @@ spring:
         debug: false
 
 #eureka configurations
-eureka:
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    registry-fetch-interval-seconds: 30
-  instance:
-    prefer-ip-address: true
-    lease-renewal-interval-in-seconds: 30
-    lease-expiration-duration-in-seconds: 60
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    registry-fetch-interval-seconds: 30
+#  instance:
+#    prefer-ip-address: true
+#    lease-renewal-interval-in-seconds: 30
+#    lease-expiration-duration-in-seconds: 60
     
 #user microservice security configurations
 user:
