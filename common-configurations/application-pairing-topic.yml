@@ -1,0 +1,5 @@
+rabbitmq:
+  topics:
+    pairing:
+      name: pairing.device
+      routing-key: pairing

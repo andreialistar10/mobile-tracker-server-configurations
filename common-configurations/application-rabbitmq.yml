@@ -1,0 +1,7 @@
+#rabbitmq setup configurations
+spring:
+  rabbitmq:
+    password: "${cipher}AQAJlyWaKpynS8tWAbkCckxBiNrXvnsa92n32xf7mN1+CSbxBB5ggU2WMDyPKhRlXFEW3BGUFFdIQ/WS1XyLvVr9+tMYM6j6tS4C/62gfQPcyrSUteNOGiOWwJdd0EdX5QCoPYE/axfO/1mlHi68KuSAgIys0yf+zWXYpYDzKzYkXy+KoPUyrB5G04M9MADQo0mqyztRCJO9jg9OYfXtnajzeiyJR6PVsjAbfAKhfUAsWMOLMvuVQJ7N+g+IwBjYyWAJ9NMGXjzAhXGmBcy4Z59z0JbOCWBhLLnOU1qljtqCpLcVK90BjDpsaJocE7oc/au+Og6HAmmPmSWxMz8+6WFEGl/yxOS/nsyAYTi55QVDsP74bDL4qcCN2DRwtJuok0QB4dHcvkHf+T+Ev5ZDkj1C"
+    username: "${cipher}AQCROW2TVLgsrhRxzEkOjTBfJmYUwtWgQe7DPrFBWz6lJaF8M1fOGo4UBnhCv+95UYivZXboqcbbZj25W2UThPxmj3/OemaFmtrbtkXqvSwFSby8qOeMyr2Wg2swaszdM8VqsLH/Ub2cMLNYMrUw06zlGZ3k1V5F2ZtXtBf73fvgPl3hoKjyk5R91tseIzA7IS5P+YRdubStDEbxlumP+T/jr7/Qp52ORb+xY3moUKQP+rA1jisK76FTKVbyxWYxATSoTgEH6W9JDJLgfvrOGmhyW4QF/bjfWwP2BXmczDyAwc1zaMydI/ZkDG+smSlIyTcSrw50vwINGh/jXOfud5r1rF16c+6ZqYtI+CcYuDOXQ+bVp3auPnD2oEUUbnaCb8k="
+    host: localhost
+    port: 5672
