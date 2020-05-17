@@ -1,3 +1,4 @@
+#Common configurations for device authorization
 device:
   security:
     jwt:
