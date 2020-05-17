@@ -6,7 +6,7 @@ Configurations for mobile tracker server application
     - {application-name}/{profile}/{application-name}.yml
     where <b>profile</b> can be: <b>development</b>, <b>test</b> or <b>production</b>
     
-2. <b>common-configurations</b> (such as liquibase, jpa, security) is the directory for configurations that will be shared across multiple microservices
+2. <b>common-configurations</b> (such as liquibase, jpa, security, rabbitmq) is the directory for configurations that will be shared across multiple microservices
 
 3. <b>gateway-service</b> contains <b>gateway-service.yml</b> that has gateway configurations.
 
