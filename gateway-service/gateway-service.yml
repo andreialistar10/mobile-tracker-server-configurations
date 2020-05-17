@@ -24,7 +24,7 @@ zuul:
       service-id: user-service
     unregistered-devices:
       strip-prefix: false
-      service-id: unregistered-devices
+      service-id: device-service
     devices:
       strip-prefix: false
       service-id: device-service
