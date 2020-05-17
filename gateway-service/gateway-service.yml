@@ -22,6 +22,9 @@ zuul:
     users:
       strip-prefix: false
       service-id: user-service
+    unregistered-devices:
+      strip-prefix: false
+      service-id: unregistered-devices
     devices:
       strip-prefix: false
       service-id: device-service
