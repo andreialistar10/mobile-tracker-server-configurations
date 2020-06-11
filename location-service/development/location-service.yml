@@ -1,6 +1,6 @@
 spring:
   application:
-    name: device-service
+    name: location-service
   #datasource configurations
   datasource:
     url: "{cipher}AQC6yqExoBRvElDkUfo9GSweaOABDBCTrBlo4flf1UehvDzl09devGlRJ2VfxhtE/r6EbaRT3GxTlybq27paIjQ8YQbuDFBIE/OF6HoWkiGBK+znu+hMU/pciDlbmwj7J3s7YPP79ljpcdwCCBi9oMSCMUUdkg9FCk+3OtrnLMqBei72UABHf2mX/K56at0oKgwUDn31Bfl3cv4i4SihSOD1RWfGvyi2Xoyk7Z2hUziAOPmhCV5QHi6iz0XxqAuZd23YvqUrvaYSWIojReqpaNfpaal1C/rJJ2y8dcIpSWKccveG0oR925tzcmGY+CVf0P94EsOGPsnq8lsxpz+pHBfzKm7sSPw6NIxdXVH5p4gmKW5MwfaeXtAoXxJKlaNxCENNQk+Q+INZxqedduxWrVWDXkolLlO7b0yjuupAw+lUPFpQq/WDeqSCTEnQtvkUe+M="
