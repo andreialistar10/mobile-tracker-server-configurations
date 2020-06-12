@@ -33,7 +33,7 @@ zuul:
       service-id: device-service
     locations:
       strip-prefix: false
-      service-id: locations-service
+      service-id: location-service
   #set sensitive headers that will not be forwarded
   sensitive-headers: Cookie, Set-Cookie
   FormBodyWrapperFilter:
