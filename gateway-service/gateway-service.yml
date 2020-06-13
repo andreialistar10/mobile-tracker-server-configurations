@@ -28,9 +28,6 @@ zuul:
     devices:
       strip-prefix: false
       service-id: device-service
-    my-devices:
-      strip-prefix: false
-      service-id: device-service
     locations:
       strip-prefix: false
       service-id: location-service
