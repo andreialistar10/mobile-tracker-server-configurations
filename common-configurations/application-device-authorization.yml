@@ -5,6 +5,6 @@ device:
       header:
         name: Authorization
         prefix-value: Bearer
-      expiration: 1800000
+      expiration: 172800000
       secret: "{cipher}AQAV/USR9pl8qnf8BPQReYnmjeeSNlFvKhZIlgqUA02ZZLtCnmHNhthmnUM9Ebuh5/HefSkn9ddvcLHpoL9q1fqpqs4Ru1JonE/bjMGFakoJquG1DJ6FC1BCqLMTKY9/Z8AeXvZMEWfUo5pqJshpG7g6K4s6LF+aDT/NA8RLwlk3Hl9hUVnkDWIefsM0wyoSWE/VkQfHV7c3O4PHr1WKFaW/lc6P5tIQ0bL23uB3kGO7WsUObgXUncXbyrCZp+yKvV64OCI9aGTTazI8D60H4/Im7+Yl2NRtUQFxg8wz8OR91NUQfk0jE5nOYdC9o+hlSXrmNg7ochaua+t/xaKEEUb0tSXBwtwYHvZdRlR0O0aatfDq2FTGieSuIS+ks+kzoVrYP0UeVi6Cfa+673gKgUOjTAxACqCR+gio7oO1sWl+inr8TX8TPg2KjVrQeFNyQfZCtysF0jXIUCWn5LRLD9DG9gzFrQ3RyYOkN5kceeHvQUWaUs7FSJZosQWab9lf+BrBJ7RpEad3AhfX5Hh0rBz2Cwt/EzsYFC9DtP3oambRkbWNQPnPKc8AYHSPIQX2MPttb7OVjGiw13sB8VAOf49RAcL35BtYJdWdj/voBwgHRS8P/pEXuavXYUueXBOl534="
         
