@@ -1,0 +1,5 @@
+rabbitmq:
+  topics:
+    notification:
+      name: notification.device
+      routing-key: notification
