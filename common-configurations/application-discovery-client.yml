@@ -9,5 +9,5 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     registry-fetch-interval-seconds: 30
-    service-url:
+    serviceUrl:
       default-zone: http://${eureka.instance.hostname}:8761/eureka/
