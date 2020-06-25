@@ -4,7 +4,7 @@ eureka:
     prefer-ip-address: true
     lease-expiration-duration-in-seconds: 60
     lease-renewal-interval-in-seconds: 30
-    hostname: ${EUREKA_HOSTNAME:192.168.100.3}
+    hostname: ${EUREKA_HOSTNAME:localhost}
   client:
     register-with-eureka: true
     fetch-registry: true
