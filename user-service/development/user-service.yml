@@ -5,7 +5,7 @@ spring:
     name: user-service
   #datasource configurations
   datasource:
-    url: "jdbc:mysql://192.168.100.3:3306/mobile_tracker_user_development"
+    url: "jdbc:mysql://{$MYSQL_HOST:192.168.100.3:3306}/mobile_tracker_user_development"
     driver-class-name: com.mysql.jdbc.Driver
     username: "{cipher}AQAGFxC/Nf/170JdpnAXjUVaMOIGnfbZ+SyG4DU1VjgKcNpnkP9AEoqMcbYaZ+7c/+tF61oDYwj6rdTnpvdKhWN9BJD4Yv9dBapyhCKWM4s5mfHJTSRCc5WqfkMihFggnGcGfqa+F7PDW7t1qSjVdXNJ9AbanQc95DsryscRSAJtjeBK6TZ9IVHqtsesTD76ROSJDuGJmVSBYjdyh2ReyX8UKa8VYzYki9DjFj6/OMcxtqHpyrniRLzWR0lLXWGjtjIvsLlj2H/mILAj+fkiEUcaOl4aX4n56/2TqcvdtvOJpmp9HBVDSfhvP1MKfganKbyK8xrrsHP19kHyu5OHqpaB7s8WzA2BmghiJaBLfh4o+kV43E0A5osE3sBZDtiv/Os="
     password: "{cipher}AQCnwi8OrFYhG5skkWJak/AW5f9C6im6DlLWa6QQP0GxMkWDnZAZf8PwoDuGxY/jfkFMOYXE+e04dtNUVi9sjvUHIRJxH7ztBQYPe/NNBJGHrNntT8G/3mPeVmNGCGZ587un2HGvUAownOvwDvKmAC+JVb7q87nrzVRmyuvpbqXuIuvpIMDHqsi0oIbFSXQmlAOKcd4H+pa+SgoGQ1zFAVGmocoysQcVYldh3FJZqiE2vAmX5Rwp6X94wk4UednkelFvj3Z9qJ6fq9HXb26fvl3ChMa46/Se51ddN50C19jN83E/S/YZHL6liBFy6n8e4dGehL4ALA4OfE6XM/kKJDtVzryWk8GamK0DkdMoPTQUtAwWtXSfoBzFANDDX6qZ7rqVBZ6yHcE1/JH9ohci142e"
